@@ -6,11 +6,14 @@ public class Burger {
 
     public static void main(String[] args) {
 
-        Burger burger = new Burger("bun", "green", "cheese", "mayo", false,"mainBurger");
-        Burger burger2 = new Burger("bun", "green", "cheese", null, false,"dietBurger");
-        Burger burger3 = new Burger("bun", "green", "cheese", "mayonnaise", true,"doubleMeatBurger");
+        Burger burger = new Burger("bun", "green", "cheese",
+                "mayo", false, "mainBurger");
+        Burger burger2 = new Burger("bun", "green", "cheese",
+                null, false, "dietBurger");
+        Burger burger3 = new Burger("bun", "green", "cheese",
+                "mayonnaise", true, "doubleMeatBurger");
 
-                }
+    }
 
     private final String bun;
     private final String green;
@@ -30,7 +33,7 @@ public class Burger {
      * @param isDoubleMeat type of isDoubleMeat.
      *                     User can choose number of meat with help of isDoubleMeat param
      */
-    public Burger(String bun, String green, String cheese, String mayo, boolean isDoubleMeat,String name) {
+    public Burger(String bun, String green, String cheese, String mayo, boolean isDoubleMeat, String name) {
         this.bun = bun;
         this.green = green;
         this.cheese = cheese;
@@ -40,12 +43,12 @@ public class Burger {
         System.out.println(this);
     }
 
-    public Burger(String bun, String green, String cheese, String mayo,String name) {
-        this(bun, green, cheese, mayo, false,"mainBurger");
+    public Burger(String bun, String green, String cheese, String mayo, String name) {
+        this(bun, green, cheese, mayo, false, "mainBurger");
     }
 
-    public Burger(String bun, String green, String cheese,String name) {
-        this(bun, green, cheese, null, false,"dietBurger");
+    public Burger(String bun, String green, String cheese, String name) {
+        this(bun, green, cheese, null, false, "dietBurger");
     }
 
     public String getBun() {
@@ -72,31 +75,15 @@ public class Burger {
     @Override
     public String toString() {
         String doubleMeat = isDoubleMeat ? "2" : "1";
-        if (getMayo()== null) {
-           return  name + "{" + "bun='" + bun + '\'' +
-                    ", green='" + green + '\'' +
-                    ", cheese='" + cheese + '\'' +
-                    ", mayo='" + mayo + '\'' +
-                    ", isDoubleMeat=" + doubleMeat +
-                    '}';
-        }
-        if (isDoubleMeat) {
-            return  name + "{" + "bun='" + bun + '\'' +
-                    ", green='" + green + '\'' +
-                    ", cheese='" + cheese + '\'' +
-                    ", mayo='" + mayo + '\'' +
-                    ", isDoubleMeat=" + doubleMeat +
-                    '}';
-        } else {
-            return  name + "{" + "bun='" + bun + '\'' +
-                    ", green='" + green + '\'' +
-                    ", cheese='" + cheese + '\'' +
-                    ", mayo='" + mayo + '\'' +
-                    ", isDoubleMeat=" + doubleMeat +
-                    '}';
-        }
+        return name + "{" + "bun='" + bun + '\'' +
+                ", green='" + green + '\'' +
+                ", cheese='" + cheese + '\'' +
+                ", mayo='" + mayo + '\'' +
+                ", isDoubleMeat=" + doubleMeat +
+                '}';
     }
 }
+
 
 
 
