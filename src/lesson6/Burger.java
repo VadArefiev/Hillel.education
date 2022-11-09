@@ -6,11 +6,11 @@ public class Burger {
 
     public static void main(String[] args) {
 
-        Burger burger = new Burger("bun", "green", "cheese",
+        new Burger("bun", "green", "cheese",
                 "mayo", false, "mainBurger");
-        Burger burger2 = new Burger("bun", "green", "cheese",
+        new Burger("bun", "green", "cheese",
                 null, false, "dietBurger");
-        Burger burger3 = new Burger("bun", "green", "cheese",
+        new Burger("bun", "green", "cheese",
                 "mayonnaise", true, "doubleMeatBurger");
 
     }
@@ -43,33 +43,6 @@ public class Burger {
         System.out.println(this);
     }
 
-    public Burger(String bun, String green, String cheese, String mayo, String name) {
-        this(bun, green, cheese, mayo, false, "mainBurger");
-    }
-
-    public Burger(String bun, String green, String cheese, String name) {
-        this(bun, green, cheese, null, false, "dietBurger");
-    }
-
-    public String getBun() {
-        return bun;
-    }
-
-    public String getGreen() {
-        return green;
-    }
-
-    public String getCheese() {
-        return cheese;
-    }
-
-    public String getMayo() {
-        return mayo;
-    }
-
-    public boolean isDoubleMeat() {
-        return isDoubleMeat;
-    }
 //create short toString and output in consol
 
     @Override
@@ -81,7 +54,7 @@ public class Burger {
                 ", mayo='" + mayo + '\'' +
                 ", isDoubleMeat=" + doubleMeat +
                 '}';
-    }
+     }
 }
 
 
