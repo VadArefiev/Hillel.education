@@ -3,7 +3,6 @@ package lesson6;
 //DTO
 public class Burger {
 
-
     public static void main(String[] args) {
 
         new Burger("bun", "green", "cheese",
