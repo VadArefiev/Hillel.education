@@ -19,6 +19,7 @@ public class Burger {
         return bun;
     }
 
+
     private final String bun;
     private final String green;
     private final String cheese;

@@ -17,6 +17,7 @@ public class FitnessMain {
         maxDoroshenko.printAccountInfo();
         vadimGalushka.printAccountInfo();
         sergeyPulavskiy.printAccountInfo();
+
     }
 }
 

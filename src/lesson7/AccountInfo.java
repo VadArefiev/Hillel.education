@@ -14,6 +14,8 @@ public class AccountInfo {
     private double weight;
     private long steps;
 
+
+    private int age;
     public AccountInfo(String name, String surname, int birthday, int monthBirth, int yearBirth,
                        String email, String phone, String pressure, double weight, long steps) {
         this.name = name;
@@ -27,11 +29,14 @@ public class AccountInfo {
         this.weight = weight;
         this.steps = steps;
     }
-    public void printAccountInfo() {
-       System.out.println(name + " " + surname + ":" + "Date of Birth " + birthday + "." + monthBirth + "." +
-                          yearBirth + ". " + "E-mail:" + email + ". " + "Phone: " + phone + ". " + "Pressure:" + pressure + ". " + "Weight:" +
-                           weight + ". " + "Steps:" + steps);
 
+    public int getAge(int year) {
+        return age = year - yearBirth;
+    }
+    public void printAccountInfo() {
+        System.out.println(name + " " + surname + ":" + "Age:" + getAge(2020) + "." + "Date of Birth " + birthday + "." + monthBirth + "." +
+                yearBirth + ". " + "E-mail:" + email + ". " + "Phone: " + phone + ". " + "Pressure:" + pressure + ". " + "Weight:" +
+                weight + ". " + "Steps:" + steps);
     }
 }
 
