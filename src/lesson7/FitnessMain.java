@@ -16,7 +16,7 @@ public class FitnessMain {
         AccountInfo roman = new AccountInfo("Roman", "Kiyas", 13, 12, 1980,
                 "roman@gmail.com", "067-767-23-46",
                 "140/70", 83, 4000);
-        AccountInfo tatyana = new AccountInfo("Tatyana", "Belan", 11, 5,2010,
+        AccountInfo tatyana = new AccountInfo("Tatyana", "Belan", 11, 5, 2010,
                 "tatyana@gmail.com", "093-330-63-00",
                 "120/75", 50, 2000);
 

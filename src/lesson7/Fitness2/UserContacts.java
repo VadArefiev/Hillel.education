@@ -1,6 +1,6 @@
 package lesson7.Fitness2;
 
-public class UserContacts extends UserDateBirth{
+public class UserContacts extends UserDateBirth {
     private final String email;
     private final String phone;
 

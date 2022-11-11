@@ -26,6 +26,7 @@ public class UserDateBirth extends UserName {
     public int getYearBirth() {
         return yearBirth;
     }
+
     public String getAge(int year) {
         age = year - getYearBirth();
         String strAge = Integer.toString(age);

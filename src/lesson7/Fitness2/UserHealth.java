@@ -18,7 +18,7 @@ public class UserHealth extends UserContacts {
                 weight + ". " + "Steps:" + steps);
     }
 
-        public void setPressure(String pressure) {
+    public void setPressure(String pressure) {
         this.pressure = pressure;
     }
 

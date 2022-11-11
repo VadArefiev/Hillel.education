@@ -5,7 +5,7 @@ import lesson7.AccountInfo;
 public class FitTracker {
 
     public static void main(String[] args) {
-       new UserHealth ("Max", "Doroshenko", 13, 4, 1985,
+        new UserHealth("Max", "Doroshenko", 13, 4, 1985,
                 "max@gmail.com", "097-948-99-44",
                 "120/70", 86, 3000).printAccountInfo();
         new UserHealth("Vadim", "Galushka", 18, 11, 1985,
