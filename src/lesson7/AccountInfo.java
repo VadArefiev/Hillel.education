@@ -30,9 +30,15 @@ public class AccountInfo {
         this.steps = steps;
     }
 
-    public int getAge(int year) {
-        return age = year - yearBirth;
+    public String getAge(int year) {
+        age = year - yearBirth;
+        String strAge = Integer.toString(age);
+        if (age < 18) {
+            return "You are under 10";
+        }
+        return strAge;
     }
+
 
     public String getSurname() {
         return surname;
@@ -69,7 +75,6 @@ public class AccountInfo {
         System.out.println(name + " " + surname + ":" + "Age:" + getAge(2020) + "." + "Date of Birth " + birthDay + "." + monthBirth + "." +
                 yearBirth + ". " + "E-mail:" + email + ". " + "Phone: " + phone + ". " + "Pressure:" + pressure + ". " + "Weight:" +
                 weight + ". " + "Steps:" + steps);
-
 
     }
 }

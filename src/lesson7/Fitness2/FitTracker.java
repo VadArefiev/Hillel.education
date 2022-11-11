@@ -1,22 +1,23 @@
-package lesson7;
+package lesson7.Fitness2;
 
-public class FitnessMain {
+import lesson7.AccountInfo;
+
+public class FitTracker {
 
     public static void main(String[] args) {
-
-        new AccountInfo("Max", "Doroshenko", 13, 4, 1985,
+       new UserHealth ("Max", "Doroshenko", 13, 4, 1985,
                 "max@gmail.com", "097-948-99-44",
                 "120/70", 86, 3000).printAccountInfo();
-        new AccountInfo("Vadim", "Galushka", 18, 11, 1985,
+        new UserHealth("Vadim", "Galushka", 18, 11, 1985,
                 "vadim@gmail.com", "068-888-84-94",
                 "130/80", 81, 9000).printAccountInfo();
-        new AccountInfo("Sergey", "Pulavskiy", 26, 8, 1985,
+        new UserHealth("Sergey", "Pulavskiy", 26, 8, 1985,
                 "sergey@gmail.com", "091-300-86-68",
                 "110/80", 89, 7000).printAccountInfo();
-        AccountInfo roman = new AccountInfo("Roman", "Kiyas", 13, 12, 1980,
+        UserHealth roman = new UserHealth("Roman", "Kiyas", 13, 12, 1980,
                 "roman@gmail.com", "067-767-23-46",
                 "140/70", 83, 4000);
-        AccountInfo tatyana = new AccountInfo("Tatyana", "Belan", 11, 5,2010,
+        UserHealth tatyana = new UserHealth("Tatyana", "Belan", 11, 5, 2010,
                 "tatyana@gmail.com", "093-330-63-00",
                 "120/75", 50, 2000);
 
@@ -35,8 +36,3 @@ public class FitnessMain {
         tatyana.printAccountInfo();
     }
 }
-
-
-
-
-
