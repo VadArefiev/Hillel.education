@@ -27,6 +27,7 @@ public class UserDateBirth extends UserName {
         return yearBirth;
     }
 
+    //made a restriction for the age of up to 18 years
     public String getAge(int year) {
         age = year - getYearBirth();
         String strAge = Integer.toString(age);

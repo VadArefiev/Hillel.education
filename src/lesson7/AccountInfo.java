@@ -28,7 +28,7 @@ public class AccountInfo {
         this.steps = steps;
     }
 
-    //getAge
+    //made a restriction for the age of up to 18 years
     public String getAge(int year) {
         int age = year - yearBirth;
         String strAge = Integer.toString(age);
