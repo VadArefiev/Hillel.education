@@ -4,7 +4,7 @@ public class UserDateBirth extends UserName {
     private final int birthDay;
     private final int monthBirth;
     private final int yearBirth;
-    private int age;
+
 
     public UserDateBirth(String name, String surname, int birthDay, int monthBirth, int yearBirth) {
         super(name, surname);

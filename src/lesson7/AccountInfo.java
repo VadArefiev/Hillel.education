@@ -13,7 +13,6 @@ public class AccountInfo {
     private String pressure;
     private double weight;
     private long steps;
-    private int age;
 
     public AccountInfo(String name, String surname, int birthday, int monthBirth, int yearBirth,
                        String email, String phone, String pressure, double weight, long steps) {
@@ -31,7 +30,7 @@ public class AccountInfo {
 
     //getAge
     public String getAge(int year) {
-        age = year - yearBirth;
+        int age = year - yearBirth;
         String strAge = Integer.toString(age);
         if (age < 18) {
             return "You are under 18";
@@ -39,32 +38,16 @@ public class AccountInfo {
         return strAge;
     }
 
-    public String getSurname() {
-        return surname;
-    }
-
     public void setSurname(String surname) {
         this.surname = surname;
-    }
-
-    public String getPressure() {
-        return pressure;
     }
 
     public void setPressure(String pressure) {
         this.pressure = pressure;
     }
 
-    public double getWeight() {
-        return weight;
-    }
-
     public void setWeight(double weight) {
         this.weight = weight;
-    }
-
-    public long getSteps() {
-        return steps;
     }
 
     public void setSteps(long steps) {
