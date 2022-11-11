@@ -33,10 +33,44 @@ public class AccountInfo {
     public int getAge(int year) {
         return age = year - yearBirth;
     }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(String pressure) {
+        this.pressure = pressure;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public long getSteps() {
+        return steps;
+    }
+
+    public void setSteps(long steps) {
+        this.steps = steps;
+    }
     public void printAccountInfo() {
         System.out.println(name + " " + surname + ":" + "Age:" + getAge(2020) + "." + "Date of Birth " + birthday + "." + monthBirth + "." +
                 yearBirth + ". " + "E-mail:" + email + ". " + "Phone: " + phone + ". " + "Pressure:" + pressure + ". " + "Weight:" +
                 weight + ". " + "Steps:" + steps);
+
+
     }
 }
 
