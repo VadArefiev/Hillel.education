@@ -5,7 +5,7 @@ public class AccountInfo {
 
     private final String name;
     private String surname;
-    private final int birthday;
+    private final int birthDay;
     private final int monthBirth;
     private final int yearBirth;
     private final String email;
@@ -20,7 +20,7 @@ public class AccountInfo {
                        String email, String phone, String pressure, double weight, long steps) {
         this.name = name;
         this.surname = surname;
-        this.birthday = birthday;
+        this.birthDay = birthday;
         this.monthBirth = monthBirth;
         this.yearBirth = yearBirth;
         this.email = email;
@@ -66,7 +66,7 @@ public class AccountInfo {
         this.steps = steps;
     }
     public void printAccountInfo() {
-        System.out.println(name + " " + surname + ":" + "Age:" + getAge(2020) + "." + "Date of Birth " + birthday + "." + monthBirth + "." +
+        System.out.println(name + " " + surname + ":" + "Age:" + getAge(2020) + "." + "Date of Birth " + birthDay + "." + monthBirth + "." +
                 yearBirth + ". " + "E-mail:" + email + ". " + "Phone: " + phone + ". " + "Pressure:" + pressure + ". " + "Weight:" +
                 weight + ". " + "Steps:" + steps);
 

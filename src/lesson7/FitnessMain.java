@@ -28,7 +28,7 @@ public class FitnessMain {
         roman.printAccountInfo();
 
         tatyana.printAccountInfo();
-        tatyana.setSurname("Kovaleve");
+        tatyana.setSurname("Kovaleva");
         tatyana.setPressure("110/80");
         tatyana.setSteps(4000);
         tatyana.setWeight(60);
