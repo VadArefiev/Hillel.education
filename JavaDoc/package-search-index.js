@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"lesson3"},{"l":"lesson4"},{"l":"lesson5"},{"l":"lesson6"},{"l":"lesson7"},{"l":"lesson7.Fitness2"},{"l":"MateAcademy"},{"l":"Mentorlessons"}];updateSearchResults();
