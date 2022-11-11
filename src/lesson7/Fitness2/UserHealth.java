@@ -4,7 +4,6 @@ public class UserHealth extends UserContacts {
     private String pressure;
     private double weight;
     private long steps;
-    private int age;
 
     public UserHealth(String name, String surname, int birthDay, int monthBirth, int yearBirth, String email, String phone, String pressure, double weight, long steps) {
         super(name, surname, birthDay, monthBirth, yearBirth, email, phone);
@@ -23,22 +22,12 @@ public class UserHealth extends UserContacts {
         this.pressure = pressure;
     }
 
-
     public void setWeight(double weight) {
         this.weight = weight;
     }
 
     public void setSteps(long steps) {
         this.steps = steps;
-    }
-
-    public String getAge(int year) {
-        age = year - getYearBirth();
-        String strAge = Integer.toString(age);
-        if (age < 18) {
-            return "You are under 18";
-        }
-        return strAge;
     }
 }
 
