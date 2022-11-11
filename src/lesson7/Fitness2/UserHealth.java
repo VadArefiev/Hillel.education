@@ -47,7 +47,7 @@ public class UserHealth extends UserContacts {
         age = year - getYearBirth();
         String strAge = Integer.toString(age);
         if (age < 18) {
-            return "You are under 10";
+            return "You are under 18";
         }
         return strAge;
     }

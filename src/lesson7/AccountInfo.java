@@ -30,11 +30,12 @@ public class AccountInfo {
         this.steps = steps;
     }
 
+    //getAge
     public String getAge(int year) {
         age = year - yearBirth;
         String strAge = Integer.toString(age);
         if (age < 18) {
-            return "You are under 10";
+            return "You are under 18";
         }
         return strAge;
     }
