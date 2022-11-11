@@ -13,9 +13,8 @@ public class AccountInfo {
     private String pressure;
     private double weight;
     private long steps;
-
-
     private int age;
+
     public AccountInfo(String name, String surname, int birthday, int monthBirth, int yearBirth,
                        String email, String phone, String pressure, double weight, long steps) {
         this.name = name;
@@ -39,7 +38,6 @@ public class AccountInfo {
         }
         return strAge;
     }
-
 
     public String getSurname() {
         return surname;
@@ -72,11 +70,11 @@ public class AccountInfo {
     public void setSteps(long steps) {
         this.steps = steps;
     }
+
     public void printAccountInfo() {
         System.out.println(name + " " + surname + ":" + "Age:" + getAge(2020) + "." + "Date of Birth " + birthDay + "." + monthBirth + "." +
                 yearBirth + ". " + "E-mail:" + email + ". " + "Phone: " + phone + ". " + "Pressure:" + pressure + ". " + "Weight:" +
                 weight + ". " + "Steps:" + steps);
-
     }
 }
 
