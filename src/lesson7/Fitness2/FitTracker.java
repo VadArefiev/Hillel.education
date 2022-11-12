@@ -1,7 +1,5 @@
 package lesson7.Fitness2;
 
-import lesson7.AccountInfo;
-
 public class FitTracker {
 
     public static void main(String[] args) {

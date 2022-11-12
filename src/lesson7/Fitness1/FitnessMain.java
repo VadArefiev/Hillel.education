@@ -1,4 +1,4 @@
-package lesson7;
+package lesson7.Fitness1;
 
 public class FitnessMain {
 

@@ -5,7 +5,9 @@ public class UserHealth extends UserContacts {
     private double weight;
     private long steps;
 
-    public UserHealth(String name, String surname, int birthDay, int monthBirth, int yearBirth, String email, String phone, String pressure, double weight, long steps) {
+    public UserHealth(String name, String surname, int birthDay, int monthBirth,
+                      int yearBirth, String email, String phone, String pressure,
+                      double weight, long steps) {
         super(name, surname, birthDay, monthBirth, yearBirth, email, phone);
         this.pressure = pressure;
         this.weight = weight;
@@ -13,8 +15,10 @@ public class UserHealth extends UserContacts {
     }
 
     public void printAccountInfo() {
-        System.out.println(getName() + " " + getSurname() + ":" + "Age:" + getAge(2020) + "." + "Date of Birth " + getBirthDay() + "." + getMonthBirth() + "." +
-                getYearBirth() + ". " + "E-mail:" + getEmail() + ". " + "Phone: " + getPhone() + ". " + "Pressure:" + pressure + ". " + "Weight:" +
+        System.out.println(getName() + " " + getSurname() + ":" + "Age:" + getAge(2020) + "." +
+                "Date of Birth " + getBirthDay() + "." + getMonthBirth() + "." +
+                getYearBirth() + ". " + "E-mail:" + getEmail() + ". " + "Phone: " +
+                getPhone() + ". " + "Pressure:" + pressure + ". " + "Weight:" +
                 weight + ". " + "Steps:" + steps);
     }
 
