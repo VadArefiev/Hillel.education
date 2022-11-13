@@ -8,13 +8,10 @@ public class UserConsolePrinter {
                 user.getContacts() + " " + user.getHealthDiary());
 
     }
-        public static void printUsers(User[] user) {
-            for (int i = 0; i < user.length; i++) {
-                printUser(user[i]);
-            }
+
+    public static void printUsers(User[] user) {
+        for (int i = 0; i < user.length; i++) {
+            printUser(user[i]);
+        }
     }
-
-
-
-
 }
