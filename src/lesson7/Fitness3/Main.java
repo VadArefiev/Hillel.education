@@ -25,16 +25,17 @@ public class Main {
                 new Contacts("tatyana@gmail.com", "093-330-63-00"),
                 new HealthDiary("120/75", 50, 2000));
 
-        System.out.println(max);
-        System.out.println(vadim);
-        System.out.println(sergey);
-        System.out.println(roman);
-        System.out.println(tatyana);
+        max.printAccountInfo();
+        vadim.printAccountInfo();
+        sergey.printAccountInfo();
+        roman.printAccountInfo();
+        tatyana.printAccountInfo();
 
-        roman.setHealthDiary(new HealthDiary("130/90", 6000, 80));
-        System.out.println(roman);
+        roman.setHealthDiary(new HealthDiary("150/90", 80, 6000));
+        roman.printAccountInfo();
 
-        tatyana.setHealthDiary(new HealthDiary("110/80", 4000, 60));
-        System.out.println(tatyana);
+        tatyana.setHealthDiary(new HealthDiary("140/80", 60, 4000));
+        tatyana.printAccountInfo();
+
     }
 }

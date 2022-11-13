@@ -12,28 +12,35 @@ public class User {
         this.dateBirth = dateBirth;
         this.contacts = contacts;
         this.healthDiary = healthDiary;
-
     }
 
-    public String getAge(int year) {
-        int age = year - dateBirth.getYearBirth();
-        if (age < 18) {
-            return "You are under 18";
-        }
-        return Integer.toString(age);
+    public Identification getIdentification() {
+        return identification;
     }
 
-    @Override
-    public String toString() {
-        return "User{" + "identification=" + identification + "," + "age=" + (getAge(2020)) +
-                ", dateBirth=" + dateBirth +
-                ", contacts=" + contacts +
-                ", healthDiary=" + healthDiary +
-                '}';
+    public DateBirth getDateBirth() {
+        return dateBirth;
+    }
+
+    public Contacts getContacts() {
+        return contacts;
+    }
+
+    public HealthDiary getHealthDiary() {
+        return healthDiary;
     }
 
     public void setHealthDiary(HealthDiary healthDiary) {
         this.healthDiary = healthDiary;
     }
+
+
+    public void printAccountInfo() {
+        System.out.println(getIdentification() + " " + getDateBirth() + " " +
+                getContacts() + " " + getHealthDiary());
+    }
 }
+
+
+
 

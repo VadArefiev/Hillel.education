@@ -32,5 +32,6 @@ public class FitTracker {
         tatyana.setSteps(4000);
         tatyana.setWeight(60);
         tatyana.printAccountInfo();
-    }
+
+     }
 }

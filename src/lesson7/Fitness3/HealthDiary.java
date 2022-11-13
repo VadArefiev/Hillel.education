@@ -12,6 +12,30 @@ public class HealthDiary {
         this.steps = steps;
     }
 
+    public String getPressure() {
+        return pressure;
+    }
+
+    public void setPressure(String pressure) {
+        this.pressure = pressure;
+    }
+
+    public double getWeight() {
+        return weight;
+    }
+
+    public void setWeight(double weight) {
+        this.weight = weight;
+    }
+
+    public long getSteps() {
+        return steps;
+    }
+
+    public void setSteps(long steps) {
+        this.steps = steps;
+    }
+
     @Override
     public String toString() {
         return "HealthDiary{" +
@@ -20,4 +44,8 @@ public class HealthDiary {
                 ", steps=" + steps +
                 '}';
     }
+
+
+
 }
+

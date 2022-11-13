@@ -12,8 +12,13 @@ public class DateBirth {
         this.yearBirth = yearBirth;
     }
 
-    public int getYearBirth() {
-        return yearBirth;
+    public String getAge(int year) {
+        int age = year - yearBirth;
+        String strAge = Integer.toString(age);
+        if (age < 18) {
+            return "You are under 18";
+        }
+        return strAge;
     }
 
     @Override
@@ -22,6 +27,21 @@ public class DateBirth {
                 "birthDay=" + birthDay +
                 ", monthBirth=" + monthBirth +
                 ", yearBirth=" + yearBirth +
+                ", Age=" + getAge(2020) +
                 '}';
     }
+
+    public int getBirthDay() {
+        return birthDay;
+    }
+
+    public int getMonthBirth() {
+        return monthBirth;
+    }
+
+    public int getYearBirth() {
+        return yearBirth;
+    }
 }
+
+
