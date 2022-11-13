@@ -12,7 +12,7 @@ public class DateBirth {
         this.yearBirth = yearBirth;
     }
 
-    public String getAge(int year) {
+    public String calculateAge(int year) {
         int age = year - yearBirth;
         String strAge = Integer.toString(age);
         if (age < 18) {
@@ -27,7 +27,7 @@ public class DateBirth {
                 "birthDay=" + birthDay +
                 ", monthBirth=" + monthBirth +
                 ", yearBirth=" + yearBirth +
-                ", Age=" + getAge(2020) +
+                ", Age=" + calculateAge(2020) +
                 '}';
     }
 

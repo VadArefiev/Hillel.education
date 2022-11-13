@@ -5,7 +5,7 @@ public class User {
     private final Identification identification;
     private final DateBirth dateBirth;
     private final Contacts contacts;
-    private HealthDiary healthDiary;
+    private final HealthDiary healthDiary;
 
     public User(Identification identification, DateBirth dateBirth, Contacts contacts, HealthDiary healthDiary) {
         this.identification = identification;
@@ -28,16 +28,6 @@ public class User {
 
     public HealthDiary getHealthDiary() {
         return healthDiary;
-    }
-
-    public void setHealthDiary(HealthDiary healthDiary) {
-        this.healthDiary = healthDiary;
-    }
-
-
-    public void printAccountInfo() {
-        System.out.println(getIdentification() + " " + getDateBirth() + " " +
-                getContacts() + " " + getHealthDiary());
     }
 }
 
