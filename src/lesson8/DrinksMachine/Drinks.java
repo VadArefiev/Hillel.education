@@ -18,11 +18,6 @@ public enum Drinks {
     public double getPrice() {
         return price;
     }
-
-
-
-
-
 }
 
 

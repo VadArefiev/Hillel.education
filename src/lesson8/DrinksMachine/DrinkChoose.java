@@ -1,7 +1,5 @@
 package lesson8.DrinksMachine;
 
-import com.sun.source.tree.NewArrayTree;
-
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -20,25 +18,102 @@ public class DrinkChoose {
 
         while (count) {
             switch (beverages) {
-
-                case COFFEE:
-                    System.out.println("You have chosen coffee. Price: " + Drinks.COFFEE + " = " +
+                case COFFEE -> {
+                    System.out.println("You have chosen coffee. Price: " + Drinks.LEMONADE + " = " +
                             Drinks.COFFEE.getPrice() + "$");
                     System.out.println("Select quantity: ");
                     Scanner chooseNumber = new Scanner(System.in);
                     number = chooseNumber.nextInt();
-                    if (number < 0) {
+                    if (number > 0) {
+                        System.out.println("Your order: " + Drinks.COFFEE + "-" + number);
+                        System.out.println("Total cost order: " + number * Drinks.COFFEE.getPrice() + "$");
+                        new Cooking().coffeeReady();
+                    } else {
                         System.out.println("Invalid number of drinks entered");
                     }
-                        System.out.println("Your order: " + Drinks.COFFEE + "-" + number);
-                        System.out.println("Total cost order: " + number * Drinks.COFFEE.getPrice());
-                        new Cooking().coffeeReady();
-                        break;
+                }
+
+                case TEA -> {
+                    System.out.println("You have chosen coffee. Price: " + Drinks.TEA + " = " +
+                            Drinks.TEA.getPrice() + "$");
+                    System.out.println("Select quantity: ");
+                    Scanner chooseNumber = new Scanner(System.in);
+                    number = chooseNumber.nextInt();
+                    if (number > 0) {
+                        System.out.println("Your order: " + Drinks.TEA + "-" + number);
+                        System.out.println("Total cost order: " + number * Drinks.TEA.getPrice() + "$");
+                        new Cooking().teaReady();
+                    } else {
+                        System.out.println("Invalid number of drinks entered");
                     }
-                    count = false;
+                }
+
+                case LEMONADE -> {
+                    System.out.println("You have chosen coffee. Price: " + Drinks.LEMONADE + " = " +
+                            Drinks.LEMONADE.getPrice() + "$");
+                    System.out.println("Select quantity: ");
+                    Scanner chooseNumber = new Scanner(System.in);
+                    number = chooseNumber.nextInt();
+                    if (number > 0) {
+                        System.out.println("Your order: " + Drinks.LEMONADE + "-" + number);
+                        System.out.println("Total cost order: " + number * Drinks.LEMONADE.getPrice() + "$");
+                        new Cooking().lemonadeReady();
+                    } else {
+                        System.out.println("Invalid number of drinks entered");
+                    }
+                }
+
+                case MOJITO -> {
+                    System.out.println("You have chosen coffee. Price: " + Drinks.MOJITO + " = " +
+                            Drinks.MOJITO.getPrice() + "$");
+                    System.out.println("Select quantity: ");
+                    Scanner chooseNumber = new Scanner(System.in);
+                    number = chooseNumber.nextInt();
+                    if (number > 0) {
+                        System.out.println("Your order: " + Drinks.MOJITO + "-" + number);
+                        System.out.println("Total cost order: " + number * Drinks.MOJITO.getPrice() + "$");
+                        new Cooking().mojitoReady();
+                    } else {
+                        System.out.println("Invalid number of drinks entered");
+                    }
+                }
+
+                case COCA_COLA -> {
+                    System.out.println("You have chosen coffee. Price: " + Drinks.COCA_COLA + " = " +
+                            Drinks.COCA_COLA.getPrice() + "$");
+                    System.out.println("Select quantity: ");
+                    Scanner chooseNumber = new Scanner(System.in);
+                    number = chooseNumber.nextInt();
+                    if (number > 0) {
+                        System.out.println("Your order: " + Drinks.COCA_COLA + "-" + number);
+                        System.out.println("Total cost order: " + number * Drinks.COCA_COLA.getPrice() + "$");
+                    } else {
+                        System.out.println("Invalid number of drinks entered");
+                    }
+                }
+                case MINERAL_WATER -> {
+                    System.out.println("You have chosen coffee. Price: " + Drinks.MINERAL_WATER.name() + " = " +
+                            Drinks.MINERAL_WATER + "$");
+                    System.out.println("Select quantity: ");
+                    Scanner chooseNumber = new Scanner(System.in);
+                    number = chooseNumber.nextInt();
+                    if (number > 0) {
+                        System.out.println("Your order: " + Drinks.MINERAL_WATER + "-" + number);
+                        System.out.println("Total cost order: " + number * Drinks.MINERAL_WATER.getPrice() + "$");
+                    } else {
+                        System.out.println("Invalid number of drinks entered");
+                    }
+                }
+                default -> {
+                    System.out.println("Enter the correct drink name!");
+                }
             }
+            count = false;
         }
+        Scanner sc3 = new Scanner(System.in);
+        System.out.println();
     }
+}
 
 
 
@@ -46,46 +121,6 @@ public class DrinkChoose {
 
 
 
-
-
-
-//                case TEA:
-//                    new TotalCost().chooseNumb();
-//                    new Cooking().coffeeReady();
-//                    break;
-//                case LEMONADE:
-//                    System.out.println("You have chosen lemonade. Price: " + Drinks.LEMONADE);
-//                    System.out.println("Total cost order: " + Drinks.LEMONADE.getPrice());
-//                    new Cooking().lemonadeReady();
-//                    break;
-//                case MOJITO:
-//                    System.out.println("You have chosen Mojito. Price: " + Drinks.MOJITO);
-//                    System.out.println("Total cost order: " + Drinks.MOJITO.getPrice());
-//                    new Cooking().mojitoReady();
-//                    break;
-//                case COCA_COLA:
-//                    System.out.println("You have chosen Coca-Cola. Price: " + Drinks.COCA_COLA);
-//                    System.out.println("Total cost order: " + Drinks.COCA_COLA.getPrice());
-//                    break;
-//                case MINERAL_WATER:
-//                    System.out.println("You have chosen Mineral_Water. Price: " + Drinks.MINERAL_WATER);
-//                    System.out.println("Total cost order: " + Drinks.MINERAL_WATER.getPrice());
-//                    break;
-//                default:
-//                    System.out.println("Enter the correct drink name!");
-//                    break;
-//            }
-//            count=false;
-//        }
-//    }
-
-
-//            Scanner chooseNumber = new Scanner(System.in);
-//            int number = chooseNumber.nextInt();
-//            if (number > 0) {
-//                System.out.println(chooseNumber.nextInt());
-//            } else {
-//                System.out.println("Invalid number of drinks entered");
 
 
 

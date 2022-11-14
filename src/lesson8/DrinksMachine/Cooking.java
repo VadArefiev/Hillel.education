@@ -20,20 +20,21 @@ public class Cooking {
     }
 
     public void teaReady() {
-        System.out.println("Tea preparation: " + new Cooking().hotWater + " " + new Cooking().tea);
+        System.out.println("Tea preparation: " + new Cooking().hotWater + "+" + new Cooking().tea);
     }
 
     public void mojitoReady() {
-        System.out.println("Mojito preparation: " + new Cooking().lime + " " +
-                           new Cooking().sparklingWater + " " + new Cooking().mint + " " +
-                           new Cooking().sugar + " " + new Cooking().ice);
+        System.out.println("Mojito preparation: " + new Cooking().lime + "+" +
+                           new Cooking().sparklingWater + "+" + new Cooking().mint + "+" +
+                           new Cooking().sugar + "+" + new Cooking().ice);
     }
 
     public void lemonadeReady() {
 
-        System.out.println("Lemonade preparation: " + new Cooking().orange + " " +
-                            new Cooking().mint + " " + new Cooking().ice + " " +
-                            new Cooking().sparklingWater + " " + new Cooking().lime + " " + new Cooking().sugar);
+        System.out.println("Lemonade preparation: " + new Cooking().orange + "+" +
+                            new Cooking().mint + "+" + new Cooking().ice + "+" +
+                            new Cooking().sparklingWater + "+" + new Cooking().lime + "+" +
+                            new Cooking().sugar);
     }
 
     public String getLime() {
