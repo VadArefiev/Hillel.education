@@ -25,55 +25,18 @@ public class Cooking {
 
     public void mojitoReady() {
         System.out.println("Mojito preparation: " + new Cooking().lime + "+" +
-                           new Cooking().sparklingWater + "+" + new Cooking().mint + "+" +
-                           new Cooking().sugar + "+" + new Cooking().ice);
+                new Cooking().sparklingWater + "+" + new Cooking().mint + "+" +
+                new Cooking().sugar + "+" + new Cooking().ice);
     }
 
     public void lemonadeReady() {
 
         System.out.println("Lemonade preparation: " + new Cooking().orange + "+" +
-                            new Cooking().mint + "+" + new Cooking().ice + "+" +
-                            new Cooking().sparklingWater + "+" + new Cooking().lime + "+" +
-                            new Cooking().sugar);
-    }
-
-    public String getLime() {
-        return lime;
-    }
-
-    public String getOrange() {
-        return orange;
-    }
-
-    public String getSparklingWater() {
-        return sparklingWater;
-    }
-
-    public String getCoffee() {
-        return coffee;
-    }
-
-    public String getTea() {
-        return tea;
-    }
-
-    public String getMint() {
-        return mint;
-    }
-
-    public String getHotWater() {
-        return hotWater;
-    }
-
-    public String getIce() {
-        return ice;
-    }
-
-    public String getSugar() {
-        return sugar;
+                new Cooking().mint + "+" + new Cooking().ice + "+" +
+                new Cooking().sparklingWater + "+" + new Cooking().lime + "+" +
+                new Cooking().sugar);
     }
 }
-
 
 
 

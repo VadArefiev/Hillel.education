@@ -104,14 +104,10 @@ public class DrinkChoose {
                         System.out.println("Invalid number of drinks entered");
                     }
                 }
-                default -> {
-                    System.out.println("Enter the correct drink name!");
-                }
+                default -> System.out.println("Enter the correct drink name!");
             }
             count = false;
         }
-        Scanner sc3 = new Scanner(System.in);
-        System.out.println();
     }
 }
 
