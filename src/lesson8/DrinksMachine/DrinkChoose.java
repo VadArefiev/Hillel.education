@@ -1,21 +1,19 @@
 package lesson8.DrinksMachine;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class DrinkChoose {
 
-    public double totalCost;
     public static void main(String[] args) {
 
         boolean count = true;
-
+        new DrinkPrint().priceDrink();
         new DrinkPrint().chooseOrder();
         Scanner chooseDrink = new Scanner(System.in);
         String beverage = chooseDrink.next().toUpperCase();
         Drink beverages = Drink.valueOf(beverage);
-        new TotalCost().inputNumber();
-
+        new DrinkPrint().chooseQuantity();
+        TotalCost.inputNumber();
         while (count) {
             switch (beverages) {
                 case COFFEE -> {
@@ -34,14 +32,10 @@ public class DrinkChoose {
                     new TotalCost().costDrink(Drink.MOJITO);
                     new Cooking().mojitoReady();
                 }
-                case COCA_COLA -> {
-                    new TotalCost().costDrink(Drink.COCA_COLA);
-                }
-                case MINERAL_WATER -> {
-                    new TotalCost().costDrink(Drink.MINERAL_WATER);
-                }
+                case COCA_COLA -> new TotalCost().costDrink(Drink.COCA_COLA);
+                case MINERAL_WATER -> new TotalCost().costDrink(Drink.MINERAL_WATER);
             }
-                count = false;
+            count = false;
 
         }
     }
