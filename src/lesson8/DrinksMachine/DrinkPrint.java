@@ -15,7 +15,7 @@ public class DrinkPrint {
     public void priceDrink() {
         for (Drink drink : Drink.values()) {
             System.out.print(drink + "=" + "$");
-            switch(drink) {
+            switch (drink) {
                 case COFFEE -> System.out.println(Drink.COFFEE.price);
                 case TEA -> System.out.println(Drink.TEA.price);
                 case LEMONADE -> System.out.println(Drink.LEMONADE.price);
