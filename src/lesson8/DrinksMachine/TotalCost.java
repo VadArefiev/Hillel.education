@@ -21,7 +21,7 @@ public class TotalCost {
                 case MINERAL_WATER -> totalCost = number * Drink.MINERAL_WATER.price;
                 case COCA_COLA -> totalCost = number * Drink.COCA_COLA.price;
             }
-            System.out.println("Total cost order: " + totalCost + "$");
+            System.out.println("Total cost order: " + "$" + totalCost);
         }
     }
 }
