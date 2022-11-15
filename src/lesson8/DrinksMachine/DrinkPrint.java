@@ -1,7 +1,5 @@
 package lesson8.DrinksMachine;
 
-import java.util.Arrays;
-
 public class DrinkPrint {
 
     public void chooseOrder() {
