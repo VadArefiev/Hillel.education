@@ -14,7 +14,7 @@ public class DrinkPrint {
 
     public void priceDrink() {
         for (Drink drink : Drink.values()) {
-            System.out.print(drink + "," + new Drink().getPrice());
+            System.out.print(drink + ",");
         }
         System.out.println();
     }
