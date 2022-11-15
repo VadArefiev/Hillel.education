@@ -10,7 +10,6 @@ public class TotalCost {
         Scanner chooseNumber = new Scanner(System.in);
         number = chooseNumber.nextInt();
     }
-
     public void costDrink(Drink drink) {
         if (number > 0) {
             switch (drink) {

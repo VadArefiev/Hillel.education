@@ -1,7 +1,6 @@
 package lesson8.DrinksMachine;
 
 public enum Drink {
-
     COFFEE(0.3),
     TEA(0.15),
     LEMONADE(0.4),

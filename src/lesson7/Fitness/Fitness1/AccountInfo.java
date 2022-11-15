@@ -2,7 +2,6 @@ package lesson7.Fitness.Fitness1;
 
 public class AccountInfo {
 
-
     private final String name;
     private String surname;
     private final int birthDay;

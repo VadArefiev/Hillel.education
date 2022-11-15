@@ -14,6 +14,7 @@ public class DrinkMachine {
         Drink beverages = Drink.valueOf(beverage);
         new DrinkPrint().chooseQuantity();
         TotalCost.inputNumber();
+
         while (count) {
             switch (beverages) {
                 case COFFEE -> {
