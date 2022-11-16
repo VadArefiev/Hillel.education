@@ -4,7 +4,7 @@ package lesson6.Burger;
 public class Burger {
     /**
 
-     */
+      */
 
     public static void main(String[] args) {
 
