@@ -3,8 +3,17 @@ package lesson6.Burger;
 //DTO
 public class Burger {
     /**
-
-      */
+     * Make a Burger class that will have fields:
+     *  bun, meat, cheese, greens, mayonnaise
+     * Make three constructors that will allow you to make three types of burgers:
+     *  regular burger (all components)
+     *  diet burger (no mayonnaise)
+     *  with double meat
+     *  In each constructor, add the output to the console of the composition of this variant of the burger
+     *  (when creating an instance of a burger using this constructor, its composition will be displayed in the console).
+     *  Make a BurgerMain class in which to create three different burgers.
+     *  Their composition will be automatically displayed on the screen when the program starts.
+     */
 
     public static void main(String[] args) {
 
