@@ -8,14 +8,15 @@ public class TotalCost {
 
     public void costDrink(Drink drink) {
         Scanner chooseNumber = new Scanner(System.in);
-        if (chooseNumber.nextInt() > 0) {
+        double amount = chooseNumber.nextInt();
+        if (amount > 0) {
             switch (drink) {
-                case COFFEE -> setTotalCost(chooseNumber.nextInt() * Drink.COFFEE.price);
-                case TEA -> setTotalCost(chooseNumber.nextInt() * Drink.TEA.price);
-                case MOJITO -> setTotalCost(chooseNumber.nextInt() * Drink.MOJITO.price);
-                case LEMONADE -> setTotalCost(chooseNumber.nextInt() * Drink.LEMONADE.price);
-                case MINERAL_WATER -> setTotalCost(chooseNumber.nextInt() * Drink.MINERAL_WATER.price);
-                case COCA_COLA -> setTotalCost(chooseNumber.nextInt() * Drink.COCA_COLA.price);
+                case COFFEE -> setTotalCost(amount * Drink.COFFEE.price);
+                case TEA -> setTotalCost(amount * Drink.TEA.price);
+                case MOJITO -> setTotalCost(amount * Drink.MOJITO.price);
+                case LEMONADE -> setTotalCost(amount * Drink.LEMONADE.price);
+                case MINERAL_WATER -> setTotalCost(amount * Drink.MINERAL_WATER.price);
+                case COCA_COLA -> setTotalCost(amount * Drink.COCA_COLA.price);
             }
             System.out.println("Total cost order: " + "$" + getTotalCost());
         }
