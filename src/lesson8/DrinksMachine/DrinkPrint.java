@@ -12,7 +12,7 @@ public class DrinkPrint {
 
     public void priceDrink() {
         for (Drink drink : Drink.values()) {
-            System.out.print(drink + "=" + " " + drink.getPrice() + "," +  "$" );
+            System.out.print(drink + "=" + " " + "$" + drink.getPrice() + ",");
         }
         System.out.println();
     }
