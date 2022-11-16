@@ -2,6 +2,9 @@ package lesson6.Burger;
 
 //DTO
 public class Burger {
+    /**
+
+     */
 
     public static void main(String[] args) {
 

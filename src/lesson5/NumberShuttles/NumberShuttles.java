@@ -1,6 +1,13 @@
 package lesson5.NumberShuttles;
 
 public class NumberShuttles {
+
+    /**
+     *  In Japan, the numbers 4 and 9 are considered unlucky.
+     *  You need to number 100 space shuttles to transport people to Mars so that there are no unlucky numbers in the shuttle numbers.
+     *  Write a function that displays all the numbers of such shuttles.
+     */
+
     public static void main(String[] args) {
         int numberShuttles = 0;
         int count = 0;

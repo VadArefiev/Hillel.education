@@ -3,6 +3,12 @@ package lesson5.GuessNumber;
 import java.util.Scanner;
 
 public class GuessNumber {
+
+   /**
+    * Make a game in which you need to guess the integer that the computer "guessed" in the range from 0 to 10
+    *  The user should be able to guess multiple attempts (minimum 3).
+    */
+
     public static void main(String[] args) {
         int range = 10;
         int rand = (int) (Math.random() * range);

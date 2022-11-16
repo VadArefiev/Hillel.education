@@ -3,6 +3,18 @@ package lesson4.CS;
 import java.util.Scanner;
 
 public class CS {
+
+    /**
+     * enter the name of the first command
+     * enter the number of frags for 5 players of the first team (i.e. there should be 5 variables)
+     * enter the name of the second command
+     * enter the number of frags for 5 players of the second team (i.e. there should be 5 variables)
+     * calculate the arithmetic average of each team's points
+     * compare team results and determine the winner
+     * output to console:
+     * "The team won"+teamName+"who scored"+result+"points"
+     */
+
     public static void main(String[] args) {
         String team1 = "Terrorists";
         String team2 = "Counter-Terrorists";
