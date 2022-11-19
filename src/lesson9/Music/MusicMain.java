@@ -11,12 +11,9 @@ public class MusicMain {
 
     public static void main(String[] args) {
 
-        RockMusic rockMusic = new RockMusic();
-        rockMusic.name = "DDT";
-        PopMusic popMusic = new PopMusic();
-        popMusic.name = "Ivanushki";
-        ClassicMusic classicMusic = new ClassicMusic();
-        classicMusic.name = "Mozart";
+        RockMusic rockMusic = new RockMusic("DDT");
+        PopMusic popMusic = new PopMusic("Ivanushki");
+        ClassicMusic classicMusic = new ClassicMusic("Mozart");
 
         MusicStyle[] groups = {rockMusic,popMusic,classicMusic};
 
