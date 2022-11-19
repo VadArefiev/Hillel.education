@@ -1,6 +1,6 @@
 package lesson9.Music;
 
-public abstract class MusicSound {
+public abstract class MusicStyle {
 
     String name;
 

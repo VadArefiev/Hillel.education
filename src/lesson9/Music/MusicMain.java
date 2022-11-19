@@ -18,9 +18,9 @@ public class MusicMain {
         ClassicMusic classicMusic = new ClassicMusic();
         classicMusic.name = "Mozart";
 
-        MusicSound[] groups = {rockMusic,popMusic,classicMusic};
+        MusicStyle[] groups = {rockMusic,popMusic,classicMusic};
 
-        for (MusicSound group : groups) {
+        for (MusicStyle group : groups) {
             group.playMusic();
         }
     }

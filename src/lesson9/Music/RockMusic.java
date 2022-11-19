@@ -1,6 +1,6 @@
 package lesson9.Music;
 
-public class RockMusic extends MusicSound {
+public class RockMusic extends MusicStyle {
 
     @Override
     public void playMusic() {
