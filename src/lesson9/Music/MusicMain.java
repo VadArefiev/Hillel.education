@@ -7,15 +7,18 @@ public class MusicMain {
      * Descendants must implement the playMusic() method in their own way.
      * In the main class, create music bands for each style
      * Use the for each method to call playMusic() on all descendants
-    */
+     */
 
     public static void main(String[] args) {
 
-        RockMusic ddt = new RockMusic();
-        PopMusic leningrad = new PopMusic();
-        ClassicMusic mozart = new ClassicMusic();
+        RockMusic rockMusic = new RockMusic();
+        rockMusic.name = "DDT";
+        PopMusic popMusic = new PopMusic();
+        popMusic.name = "Ivanushki";
+        ClassicMusic classicMusic = new ClassicMusic();
+        classicMusic.name = "Mozart";
 
-        MusicSound[] groups = {ddt, leningrad, mozart};
+        MusicSound[] groups = {rockMusic,popMusic,classicMusic};
 
         for (MusicSound group : groups) {
             group.playMusic();

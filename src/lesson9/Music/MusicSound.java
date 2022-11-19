@@ -1,7 +1,9 @@
 package lesson9.Music;
 
-public class MusicSound {
+public abstract class MusicSound {
 
-    public void playMusic() {
-    }
+    String name;
+
+    public abstract void playMusic();
+
 }

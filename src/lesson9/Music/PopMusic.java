@@ -4,8 +4,6 @@ public class PopMusic extends MusicSound {
 
     @Override
     public void playMusic() {
-        System.out.println("Sound of PopMusic");
-        super.playMusic();
-
+        System.out.println(name + "-" + "Sound of PopMusic");
     }
 }
