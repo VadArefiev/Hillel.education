@@ -2,7 +2,7 @@ package lesson9.Music;
 
 public abstract class MusicStyle {
 
-    String name;
+    protected String name;
 
     public MusicStyle(String name) {
         this.name = name;
