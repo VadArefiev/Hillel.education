@@ -1,56 +1,25 @@
 package lesson10.FibonacciNumber;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class FibonacciNumber {
 
     public static void main(String[] args) {
-
-        System.out.println(new FibonacciNumber().fib(5));
+        System.out.println("enter a number from 0 to 30:");
+        Scanner scanner = new Scanner(System.in);
+        fib(scanner.nextInt());
     }
 
-    int fib(int n) {
+    public static void fib(int n) {
 
-        int first = 0;
-        int second = 1;
-        int third;
-        System.out.println("fibonacci number " + n + ":");
-        System.out.print(first + " " + second);
-        if (n >= 2 && n <= 30) {
-            for (int i = 2; i <= n; i++) {
-                third = first + second;
-                first = second;
-                second = third;
-            }
-            return second;
+        int[] fib = new int[n];
+        fib[0] = 0;
+        fib[1] = 1;
+        System.out.print("fibonacci numbers " + fib[0] + ", " + fib[1] + ", ");
+        for (int i = 2; i < n; ++i) {
+            fib[i] = fib[i - 1] + fib[i - 2];
+            System.out.print(fib[i] + ", ");
         }
-        return n;
     }
 }
 
-
-//
-//
-//    public static void main(String[] args) {
-//
-//        Scanner sn = new Scanner(System.in);
-//        System.out.print("enter any number: ");
-//
-//    int n = sn.nextInt();
-//    int a = 0;
-//    int b = 1;
-//    int fib = 2;
-//    int i = 2;
-//
-//        System.out.println("fibonacci number " + n + ":" );
-//        System.out.print(a + " " + b);
-//        while (i < n) {
-//        fib = a + b;
-//        a = b;
-//        b = fib;
-//        i++;
-//        System.out.print(" " + fib);
-//        }
-//    }
-//}
