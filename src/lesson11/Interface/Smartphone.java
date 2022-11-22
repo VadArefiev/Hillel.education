@@ -1,6 +1,6 @@
 package lesson11.Interface;
 
-public interface SmartphoneUsing {
+public interface Smartphone {
     void call();
 
     void sms();

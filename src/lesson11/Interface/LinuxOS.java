@@ -1,4 +1,4 @@
 package lesson11.Interface;
 
-public interface IosUsing {
+public interface LinuxOS {
 }

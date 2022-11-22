@@ -1,6 +1,6 @@
 package lesson11.Interface;
 
-public class Android implements SmartphoneUsing, LinuxUsing {
+public class Android implements Smartphone, LinuxOS {
 
     @Override
     public void call() {

@@ -1,6 +1,6 @@
 package lesson11.Interface;
 
-public class Iphone implements SmartphoneUsing, IosUsing {
+public class Iphone implements Smartphone, IOS {
 
     @Override
     public void call() {

@@ -11,14 +11,11 @@ public class MainPhone {
 
     public static void main(String[] args) {
 
-        SmartphoneUsing android = new Android();
-        Iphone iphone = new Iphone();
-
-        phoneUse(android);
-        phoneUse(iphone);
+        phoneUse(new Android());
+        phoneUse(new Iphone());
     }
 
-    public static void phoneUse(SmartphoneUsing smartphoneUsing) {
+    public static void phoneUse(Smartphone smartphoneUsing) {
         smartphoneUsing.sms();
         smartphoneUsing.call();
         smartphoneUsing.Internet();
