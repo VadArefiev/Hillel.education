@@ -15,10 +15,10 @@ public class MainPhone {
         phoneUse(new Iphone());
     }
 
-    public static void phoneUse(Smartphone smartphoneUsing) {
-        smartphoneUsing.sms();
-        smartphoneUsing.call();
-        smartphoneUsing.Internet();
+    public static void phoneUse(Smartphone smartphone) {
+        smartphone.sms();
+        smartphone.call();
+        smartphone.Internet();
     }
 }
 
