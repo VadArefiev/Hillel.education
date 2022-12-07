@@ -1,6 +1,5 @@
 package lesson8.DrinksMachine;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class DrinkMachine {

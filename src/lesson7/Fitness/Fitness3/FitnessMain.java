@@ -44,6 +44,7 @@ public class FitnessMain {
                 new HealthDiary("120/75", 50, 2000));
 
         UserConsolePrinter.printUsers(new User[]{max, vadim, sergey, roman, tatyana});
+
         roman.getHealthDiary().setPressure("150/90");
         roman.getHealthDiary().setWeight(88);
         UserConsolePrinter.printUsers(new User[]{roman});
